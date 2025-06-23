@@ -1,11 +1,11 @@
 services:
   - type: web
     name: spring-boot-app
-    env: java
     buildCommand: ./mvnw clean install
     startCommand: java -jar target/*.jar
     plan: free
     envVars:
       - key: JAVA_VERSION
-        value: 17
+        value: 21
     autoDeploy: true
+
